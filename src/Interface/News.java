@@ -1,12 +1,8 @@
 package Interface;
 
-import Interface.INewsInterface;
-import java.util.Arrays;
-import java.util.OptionalDouble;
-
 public class News implements INewsInterface {
     public int ID;
-    public String Title,PublishDate,Author, Content;
+    public String Title, PublishDate, Author, Content;
     public float AverageRate;
     public int[] RateList = new int[3];
 
@@ -84,8 +80,13 @@ public class News implements INewsInterface {
         System.out.println(this.toString());
 
     }
-    public OptionalDouble Calculate(){
-        return Arrays.stream(RateList).average();
 
+    public News Calculate() {
+        float t = 0;
+        for (int r : RateList) {
+            t += r;
+        }
+        AverageRate = t / 3;
+        return this;
     }
 }

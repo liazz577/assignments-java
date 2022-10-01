@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="64.0" layoutY="94.0" prefHeight="37.0" prefWidth="182.0" promptText="Ho ten" />
+      <Button layoutX="248.0" layoutY="97.0" mnemonicParsing="false" text="Submit" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="62.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form" wrappingWidth="86.6708984375" />
+      <TextField layoutX="62.0" layoutY="131.0" promptText="Email" />
+      <TextField layoutX="62.0" layoutY="162.0" promptText="Tuoi" />
+      <TextField layoutX="62.0" layoutY="193.0" promptText="Dia chi" />
+      <Button layoutX="249.0" layoutY="128.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="249.0" layoutY="162.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="249.0" layoutY="193.0" mnemonicParsing="false" text="Submit" />
+   </children>
+</Pane>

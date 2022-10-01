@@ -64,6 +64,7 @@ public class PhoneBook extends Phone {
     void sort() {
         if (PhoneList.size() == 0) System.out.println("PhoneList is empty");
         else {
+
             //Sắp xếp tăng dần theo tên
             Collections.sort(PhoneList, new Comparator<String>() {
                 @Override
@@ -75,6 +76,7 @@ public class PhoneBook extends Phone {
             for (String s : PhoneList) {
                 System.out.println(s);
             }
+
             //Sắp xếp giảm dần theo tên
             Collections.sort(PhoneList, new Comparator<String>() {
                 @Override
