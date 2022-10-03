@@ -5,17 +5,21 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.Controller">
    <children>
-      <TextField layoutX="64.0" layoutY="94.0" prefHeight="37.0" prefWidth="182.0" promptText="Ho ten" />
-      <Button layoutX="248.0" layoutY="97.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="txtFullname" layoutX="62.0" layoutY="57.0" prefHeight="37.0" prefWidth="186.0" promptText="Ho ten" />
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="62.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form" wrappingWidth="86.6708984375" />
-      <TextField layoutX="62.0" layoutY="131.0" promptText="Email" />
-      <TextField layoutX="62.0" layoutY="162.0" promptText="Tuoi" />
-      <TextField layoutX="62.0" layoutY="193.0" promptText="Dia chi" />
-      <Button layoutX="249.0" layoutY="128.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="249.0" layoutY="162.0" mnemonicParsing="false" text="Submit" />
-      <Button layoutX="249.0" layoutY="193.0" mnemonicParsing="false" text="Submit" />
+      <TextField fx:id="txtEmail" layoutX="62.0" layoutY="115.0" promptText="Email" />
+      <TextField fx:id="txtTuoi" layoutX="62.0" layoutY="174.0" promptText="Tuoi" />
+      <TextField fx:id="txtDiachi" layoutX="62.0" layoutY="227.0" prefHeight="80.0" prefWidth="186.0" promptText="Dia chi" />
+      <Button layoutX="248.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit" />
+      <Text fx:id="tMot" layoutX="350.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liam Vicerador" wrappingWidth="132.6708984375" />
+      <Text fx:id="tHai" layoutX="340.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="liamcritlance@gmail.com" wrappingWidth="195.6708984375" />
+      <Text fx:id="Age" layoutX="353.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21" wrappingWidth="126.6708984375" />
+      <Text fx:id="Address" layoutX="340.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hanoi" wrappingWidth="126.6708984375" />
+      <Text fx:id="noticeFullName" fill="#e43812" layoutX="62.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeEmail" fill="#e43812" layoutX="62.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeAge" fill="#e43812" layoutX="62.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Text fx:id="noticeAddress" fill="#e43812" layoutX="62.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
    </children>
 </Pane>
